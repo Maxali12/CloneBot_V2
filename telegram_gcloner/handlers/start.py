@@ -18,10 +18,9 @@ def init(dispatcher: Dispatcher):
 
 @restricted
 def start(update, context):
-    rsp = update.message.reply_text('🔺 First, send me a ZIP archive containing the SA files and add /sa to the subject. 🔺\n'
-                                    '📂 After that, use /folders to set and mark/favourite your destination folders. 📂\n'
+    rsp = update.message.reply_text('Hey {username}'
                                     '🔗 You are now ready to go! Just forward or send a Google Drive link to clone the File/Folder 🔗 \n.'
-                                    'Bot Developed by Dr.Caduceus & MsGsuite . Follow @TheCaduceus & @MsGsuite on Telegram')
+                                    'Bot Developed by BDBOTS 🇧🇩 & Mirror Cloud BD . Follow @bdbots & @mirrorcloudbd on Telegram')
     rsp.done.wait(timeout=60)
     message_id = rsp.result().message_id
     if update.message.chat_id < 0:
