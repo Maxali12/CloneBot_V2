@@ -264,7 +264,6 @@ class MySaveFileThread(threading.Thread):
 
             if self.critical_fault is True:
                 break
-
         message += '\n╰──────⌈ ✅ Cloning Process Finished ! ✅ ⌋──────╯'
         try:
             context.bot.edit_message_text(chat_id=chat_id, message_id=message_id, text=message,
